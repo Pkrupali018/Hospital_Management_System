@@ -15,6 +15,7 @@ namespace HospitalManagementSystem
             {
                 Response.Write("Welcome, " + Session["AName"]);
             }
+
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)

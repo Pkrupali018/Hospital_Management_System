@@ -14,8 +14,8 @@
                 <br />
                 <br />
                 Hello,&nbsp;&nbsp;
-                <asp:Label ID="lblName" runat="server" Text='' ></asp:Label>
-                </b></center>
+                <panel ID="panelMsg" runat="server"></panel>
+                </b></center> 
             <br />
             <br />
             <asp:HyperLink ID="hlAddDoctor" runat="server" ForeColor="Blue" NavigateUrl="~\AddDoctor.aspx">Add Doctors</asp:HyperLink>

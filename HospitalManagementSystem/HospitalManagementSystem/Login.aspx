@@ -4,16 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Login Page</title>
 </head>
 <body>
+
     <center><form id="form1" runat="server">
         <div>
             <br />
             <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <b><asp:Label ID="lblQuestion" runat="server" Text="Are you Doctor or Patient?" Font-Size="Larger"></asp:Label></b>
+            <asp:Panel ID="PanelSelection" runat="server">
+                &nbsp; <b>
+                <asp:Label ID="lblQuestion" runat="server" Text="Are you Doctor or Patient?" Font-Size="Larger"></asp:Label>
+                </b>
                 <br />
                 <br />
                 <asp:RadioButtonList ID="rblLogin" runat="server" OnSelectedIndexChanged="rblLogin_SelectedIndexChanged">
@@ -24,7 +26,9 @@
                 <br />
                 <asp:Button ID="btnQuestion" runat="server" OnClick="btnQuestion_Click" Text="Ok" />
                 <br />
-                <br />
+            </asp:Panel>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<br />
                 <br />
                 <br />
                 <br />
@@ -35,10 +39,14 @@
                     <br />
                     <br />
                     <br />
+                   
+
                     <asp:Label ID="lblUserName" runat="server" Text="UserName:"></asp:Label>
-                    &nbsp;<asp:TextBox ID="tbUserName" runat="server"></asp:TextBox>
+                    &nbsp;
+                    <asp:TextBox ID="tbUserName" runat="server"></asp:TextBox>
                     <br />
                     <br />
+
                     <asp:Label ID="lblPassword" runat="server" Text="Password: "></asp:Label>
                     &nbsp;
                     <asp:TextBox ID="tbPassword" runat="server" TextMode="Password"></asp:TextBox>
@@ -51,8 +59,6 @@
                     <br />
                 </asp:Panel>
                 <br />
-                </b>
-              
         </div>
     </form>
 </center>

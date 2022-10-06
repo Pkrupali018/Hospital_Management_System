@@ -106,6 +106,7 @@ namespace HospitalManagementSystem
                 PanelLogin.Visible = true;
                 hlRegister.Visible = false;
             }
+            PanelSelection.Visible = false;
         }
 
         protected void rblLogin_SelectedIndexChanged(object sender, EventArgs e)
